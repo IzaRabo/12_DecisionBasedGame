@@ -14,58 +14,62 @@
         android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.074" />
+        app:layout_constraintVertical_bias="0.235" />
 
     <Button
         android:id="@+id/btnChoice1"
-        android:layout_width="397dp"
-        android:layout_height="74dp"
+        android:layout_width="510dp"
+        android:layout_height="49dp"
         android:onClick="setBtn1"
         android:text="Button"
         app:layout_constraintBottom_toTopOf="@+id/btnChoice2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btnChoice4"
-        android:layout_width="397dp"
-        android:layout_height="74dp"
+        android:layout_width="512dp"
+        android:layout_height="47dp"
         android:onClick="setBtn4"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.97" />
+        app:layout_constraintVertical_bias="0.973" />
 
     <Button
         android:id="@+id/btnChoice3"
-        android:layout_width="397dp"
-        android:layout_height="74dp"
+        android:layout_width="512dp"
+        android:layout_height="50dp"
         android:onClick="setBtn3"
         android:text="Button"
         app:layout_constraintBottom_toTopOf="@+id/btnChoice4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btnChoice2"
-        android:layout_width="397dp"
-        android:layout_height="74dp"
+        android:layout_width="512dp"
+        android:layout_height="49dp"
         android:onClick="setBtn2"
         android:text="Button"
         app:layout_constraintBottom_toTopOf="@+id/btnChoice3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
