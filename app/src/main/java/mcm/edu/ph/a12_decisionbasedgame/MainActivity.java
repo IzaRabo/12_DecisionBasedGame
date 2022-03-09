@@ -1,14 +1,25 @@
 package mcm.edu.ph.a12_decisionbasedgame;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    private ProgressBar mprogressBar;
+    private TextView mloadingText;
+
+    private int mprogressStatus = 0;
+
+    private Handler mHandler = new Handler();
 
     Button btn1, btn2, btn3, btn4;
     TextView text;
@@ -21,6 +32,38 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         enableFullscreen();
         setContentView(R.layout.activity_main);
+
+        mprogressBar = (ProgressBar) findViewById(R.id.progressBar);
+        mloadingText = (TextView) findViewById(R.id.txt);
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (mprogressStatus < 100) {
+                    mprogressStatus++;
+                    android.os.SystemClock.sleep(50);
+                    mHandler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            mprogressBar.setProgress(mprogressStatus);
+
+                        }
+                    });
+                }
+                mHandler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        mloadingText.setVisibility(View.VISIBLE);
+                    }
+                });
+
+
+            }
+
+
+        });
+
+
 
         text = findViewById(R.id.textView);
 

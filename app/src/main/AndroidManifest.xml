@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:adroid="http://schemas.android.com/apk/distribution"
     package="mcm.edu.ph.a12_decisionbasedgame">
 
     <application
@@ -10,9 +11,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.12_DecisionBasedGame">
         <activity
+            android:name=".credits"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".Settings"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
+            android:exported="false"
+            android:screenOrientation="landscape">
+    </activity>
+        <activity
+            android:name=".MainmenuActivity"
+            android:exported="true"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".introActivity"
+            android:exported="true"
+            android:screenOrientation="landscape">
+        <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />

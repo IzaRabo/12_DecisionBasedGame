@@ -13,7 +13,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 //import com.example.group14_decisionbasedgame.R;
-//import com.example.group14_decisionbasedgame.controller.bgRelated;
+//import com.example.group14_decisionbasedgame.controller.brelated;
 //import com.example.group14_decisionbasedgame.controller.getProgressBar;
 //import com.example.group14_decisionbasedgame.controller.musicRelated;
 
@@ -32,14 +32,14 @@ public class loadingscreen extends AppCompatActivity {
 
         progressBar = findViewById(R.id.progressBar);
         textView = findViewById(R.id.txt);
-       // background = findViewById(R.id.L_bg_image);
+        background = findViewById(R.id.white1);
 
         progressBar.setMax(100);
         progressBar.setScaleY(2f);
         progressAnimation();
 
         //musicRelated.strtLscreen(this);
-       // bgRelated.Lscreen_bgRandom(background);
+        brelated.Lscreen_bgRandom(background);
     }
 
     private void progressAnimation() {
@@ -61,10 +61,10 @@ public class loadingscreen extends AppCompatActivity {
                             View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
         }
     }
-    //@Override
-    //protected void onPause(){
-       // super.onPause();
-       // Log.d(TAG, "Lscreen onPause: working");
-       // musicRelated.stopLscreen_music();
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(TAG, "Lscreen onPause: working");
+    }
 
 }

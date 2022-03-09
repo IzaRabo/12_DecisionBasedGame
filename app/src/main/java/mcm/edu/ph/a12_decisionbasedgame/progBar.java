@@ -42,9 +42,9 @@ public class progBar extends Animation {
         if (value == to) {
             if (!called){
                 context.startActivity(new Intent(context, this.nextActivity));
-                Log.d(TAG, "kenji activated");}
+                Log.d(TAG, "myk activated");}
             called = true;
-            Log.d(TAG, "next act from prg bar activated");
+            Log.d(TAG, "the next act from prg bar activated");
         }
     }
 }
