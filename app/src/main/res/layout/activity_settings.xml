@@ -6,4 +6,90 @@
     android:layout_height="match_parent"
     tools:context=".Settings">
 
+    <TextView
+        android:id="@+id/txtsettings"
+        android:layout_width="237dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="28dp"
+        android:text="SETTINGS"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLanguages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="148dp"
+        android:text="Languages"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btneng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="52dp"
+        android:clickable="true"
+        android:text="English"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@+id/txtLanguages"
+        app:layout_constraintTop_toBottomOf="@+id/txtsettings" />
+
+    <Button
+        android:id="@+id/btntag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:clickable="true"
+        android:text="Tagalog"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@+id/btneng"
+        app:layout_constraintTop_toTopOf="@+id/btneng" />
+
+    <Button
+        android:id="@+id/btnceb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:clickable="true"
+        android:text="Cebuano"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/btntag"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="@+id/btneng"
+        app:layout_constraintTop_toBottomOf="@+id/txtsettings" />
+
+    <TextView
+        android:id="@+id/txtlogsettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Language Applied"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:backgroundTint="#bcbca9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnceb"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
