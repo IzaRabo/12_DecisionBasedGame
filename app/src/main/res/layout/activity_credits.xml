@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/teal_700"
     tools:context=".credits">
+
 
     <TextView
         android:id="@+id/txtSettings"
@@ -13,6 +15,7 @@
         android:layout_marginTop="32dp"
         android:text="CREDITS"
         android:textSize="50sp"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,8 +25,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SAMANTHA MANGANAAN"
-        android:textColor="#bcbca9"
         android:textSize="20sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -35,8 +38,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="EISHA VILLAFLORES"
-        android:textColor="#bcbca9"
         android:textSize="20sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -49,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="116dp"
         android:text="IZA RABO"
-        android:textColor="#bcbca9"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="MYK PALADO"
-        android:textColor="#bcbca9"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,6 +78,7 @@
         android:layout_marginBottom="16dp"
         android:clickable="true"
         android:text="Back"
+        app:backgroundTint="#76748E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

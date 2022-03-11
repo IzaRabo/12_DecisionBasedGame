@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/teal_700"
     tools:context=".Settings">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="67dp"
         android:layout_marginTop="28dp"
         android:text="SETTINGS"
+        android:textColor="@color/white"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
@@ -26,6 +28,7 @@
         android:layout_marginTop="148dp"
         android:text="Languages"
         android:textSize="30sp"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,6 +41,7 @@
         android:clickable="true"
         android:text="English"
         android:textSize="22sp"
+        app:backgroundTint="#76748E"
         app:layout_constraintStart_toEndOf="@+id/txtLanguages"
         app:layout_constraintTop_toBottomOf="@+id/txtsettings" />
 
@@ -49,6 +53,7 @@
         android:clickable="true"
         android:text="Tagalog"
         android:textSize="22sp"
+        app:backgroundTint="#76748E"
         app:layout_constraintStart_toEndOf="@+id/btneng"
         app:layout_constraintTop_toTopOf="@+id/btneng" />
 
@@ -60,6 +65,7 @@
         android:clickable="true"
         android:text="Cebuano"
         android:textSize="22sp"
+        app:backgroundTint="#76748E"
         app:layout_constraintEnd_toEndOf="@+id/btntag"
         app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="@+id/btneng"
@@ -73,6 +79,7 @@
         android:text="Language Applied"
         android:textSize="40sp"
         android:visibility="invisible"
+        android:textColor="@color/white"
         app:backgroundTint="#bcbca9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,6 +96,7 @@
         android:layout_marginBottom="24dp"
         android:clickable="true"
         android:text="Back"
+        app:backgroundTint="#76748E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
