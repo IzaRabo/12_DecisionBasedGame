@@ -5,6 +5,7 @@
     android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".view.introActivity">
 
 
@@ -13,7 +14,7 @@
         android:layout_width="471dp"
         android:layout_height="174dp"
         android:text="START"
-        android:textColor="	#7e7b79"
+        android:textColor="@color/white"
         android:textSize="150sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +31,7 @@
         android:layout_marginBottom="36dp"
         android:text="@string/screen_text1"
         android:textAlignment="center"
-        android:textColor="#bcbca9"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.499"
