@@ -97,12 +97,13 @@ public class Story {
     }
 
     public void startingPoint() {
-        ma.text.setText("\n On the Hogwarts School, Chief Moody sent you and Harry to the party after winning the Quidditch match. \n" +
-                "\n After going there, they found the dead body of Cedric Diggory, he got shot right in between his eyes. What do you do?");
+        ma.text.setText("\n On the Hooktown Academy, Chief Wallace sent you and Henry to the party after winning the hockey match. \n" +
+                "After going there, they found the dead body of Kennedy Bowen, he got shot right in between his eyes. What do you do?");
 
-        ma.btn1.setText("Let Chief Moody take care of the scene");
-        ma.btn2.setText("Report to Albus Dumbledore");
-        ma.btn3.setText("Call Professor Snape in the other room");
+        ma.image.setImageResource(R.drawable.scene1theafterparty);
+        ma.btn1.setText("Let Chief Wallace take care of the scene");
+        ma.btn2.setText("Report to Headmaster Seymour");
+        ma.btn3.setText("Call Professor Milton in the other room");
         ma.btn4.setText("Leave the scene");
 
         ma.btn1.setVisibility(View.VISIBLE);
@@ -119,9 +120,10 @@ public class Story {
 
     public void Result1() {
 
-        ma.text.setText("Chief Moody took care of the scene. What do you do?");
+        ma.image.setImageResource(R.drawable.scene1theafterpartyonlytape);
+        ma.text.setText("Chief Wallace took care of the scene. What do you do?");
 
-        ma.btn1.setText("Talk to Chief Moody about his ties to the investigation");
+        ma.btn1.setText("Talk to Chief Wallace about his ties to the investigation");
         ma.btn2.setText("Ask about the evidence gathered");
         ma.btn3.setText("Ask about the suspects");
         ma.btn4.setText("Back");
@@ -138,9 +140,9 @@ public class Story {
     }
 
     public void sec1() {
-        ma.text.setText("Chief Moody: I was instructed by Lucious Malfoy to tell the players of the Quidditch match about the party after the win.");
+        ma.text.setText("Chief Wallace: I was instructed by Mr. Keating to tell the players of the hockey match about the party after the win.");
 
-        ma.btn1.setText("Back");
+        ma.btn1.setText("Back");    
 
         ma.btn2.setVisibility(View.INVISIBLE);
         ma.btn3.setVisibility(View.INVISIBLE);
@@ -150,8 +152,8 @@ public class Story {
     }
 
     public void sec2() {
-        ma.text.setText("Chief Moody shows the Killer's profile. The Killer handles guns. The Killer was not anywhere near the crime scene. The Killer is right-handed.");
-
+        ma.text.setText("Chief Wallace shows the Killer's profile. The Killer handles guns and right-handed. He was not seen anywhere near the crime scene.");
+        ma.image.setImageResource(R.drawable.black);
         ma.btn1.setText("Back");
 
         ma.btn2.setVisibility(View.INVISIBLE);
@@ -164,15 +166,16 @@ public class Story {
 
     public void sec3() {
 
-        ma.text.setText("Chief Moody shows a folder with the list of suspects \n" +
-                "\n 1. Lucious Malfoy was the organizer of the party. He is right-handed, and has a background of owning guns. \n" +
-                "\n 2. Professor Snape was seen at the Quidditch match angry about the loss of his team to Hufflepuff. He was alledgedly caught sabotaging players of Hufflepuff. Was seen at the party.\n" +
-                "\n 3. Albus Dumbledore is the Headmaster of the school. Was not present during the match. Owns a gun for self protection. He is right-handed.\n" +
+        ma.text.setText("Chief Wallace shows a folder with the list of suspects \n" +
+                "\n 1. Mr. Charles Keating was the organizer of the party. He is right-handed, and has a background of owning guns. \n" +
+                "\n 2. Professor Franklin Milton was seen at the hockey match angry about the loss of his team to Midnight Marauders team, alledgedly caught sabotaged their players. He was seen at the party and is right-handed.\n" +
+                "\n 3. Headmaster Seymour Gray, the Headmaster of the Academy, was not present during the match. Owns a gun for protection, is right-handed.\n" +
                 "\n Who are you going to arrest?");
 
-        ma.btn1.setText("Lucious Malfoy");
-        ma.btn2.setText("Professor Snape");
-        ma.btn3.setText("Albus Dumbledore");
+        ma.image.setImageResource(R.drawable.scene1theafterpartynobody);
+        ma.btn1.setText("Mr. Keating");
+        ma.btn2.setText("Professor Milton");
+        ma.btn3.setText("Headmaster Seymour");
         ma.btn4.setText("Back");
 
         nextPage1 = "sus1";
@@ -182,8 +185,8 @@ public class Story {
     }
 
     public void sus1() {
-        ma.text.setText("You arrested Lucious Malfoy for the murder of Cedric Diggory. Although the evidence was pointing at him you have a gut feeling that Lucious Malfoy was just the accomplice and the real killer is still out there.");
-
+        ma.text.setText("You arrested Mr. Keating for the murder of Kennedy Bowen, although the evidence was pointing at him you have a gut feeling that he was just the accomplice and the real killer is still out there.");
+        ma.image.setImageResource(R.drawable.black);
         ma.btn4.setText("Restart");
 
         ma.btn1.setVisibility(View.INVISIBLE);
@@ -194,8 +197,8 @@ public class Story {
     }
 
     public void sus2() {
-        ma.text.setText("You arrested Professor Snape for the murder of Cedric Diggory. Both you and Harry looked at each other having a gut feeling that you arrested someone innocent");
-
+        ma.text.setText("You arrested Professor Milton for the murder of Kennedy Bowen. Both you and Henry looked at each other having a gut feeling that he might be innocent");
+        ma.image.setImageResource(R.drawable.black);
         ma.btn4.setText("Restart");
 
         ma.btn1.setVisibility(View.INVISIBLE);
@@ -206,8 +209,8 @@ public class Story {
     }
 
     public void sus3() {
-        ma.text.setText("You arrested Albus Dumbledore for the murder of Cedric Diggory. Both you and Harry looked at each other having a gut feeling that you arrested someone innocent");
-
+        ma.text.setText("You arrested Headmaster Seymour Gray after the death of Kennedy Bowen. Both you and Henry looked at each other having a gut feeling that he might be innocent");
+        ma.image.setImageResource(R.drawable.black);
         ma.btn4.setText("Restart");
 
         ma.btn1.setVisibility(View.INVISIBLE);
@@ -218,10 +221,11 @@ public class Story {
     }
 
     public void Result2() {
-        ma.text.setText("Albus Dumbledore took care of the crime scene.\n" +
+        ma.text.setText("Headmaster Seymour took care of the crime scene.\n" +
                 "What do you do?");
 
-        ma.btn1.setText("Talk to Albus Dumbledore about his ties to the investigation");
+        ma.image.setImageResource(R.drawable.scene1theafterpartyonlytape);
+        ma.btn1.setText("Talk to Headmaster Seymour about his ties to the investigation");
         ma.btn2.setText("Ask about the evidence in the crime scene");
         ma.btn3.setText("Ask about the suspects");
         ma.btn4.setText("Back");
@@ -238,9 +242,9 @@ public class Story {
     }
 
     public void sec5() {
-        ma.text.setText("Albus Dumbledore: I was here at my office the whole time. I had an alibi and that was Cedric Diggory.");
-
-        ma.btn1.setText("Ask about what Cedric wanted from him");
+        ma.text.setText("Headmaster Seymour: I was here at my office the whole time. I had an alibi and that was Kennedy.");
+        ma.image.setImageResource(R.drawable.headmaster);
+        ma.btn1.setText("Ask about what Kennedy wanted from him");
         ma.btn2.setText("Back");
 
         ma.btn3.setVisibility(View.INVISIBLE);
@@ -252,12 +256,13 @@ public class Story {
     }
 
     public void extra1() {
-        ma.text.setText("Albus Dumbledore: He was hallucinating from time to time about Chief Moody's appearance");
+        ma.text.setText("Headmaster Seymour: He was hallucinating from time to time about Chief Wallace's appearance");
 
         ma.btn4.setText("Back");
 
         nextPage4 = "Result2";
 
+        ma.image.setImageResource(R.drawable.headmaster);
         ma.btn4.setVisibility(View.VISIBLE);
         ma.btn1.setVisibility(View.INVISIBLE);
         ma.btn2.setVisibility(View.INVISIBLE);
@@ -265,10 +270,10 @@ public class Story {
     }
 
     public void sec6() {
-        ma.text.setText("Albus Dumbledore shows the Killer's profile. The Killer handles guns. The Killer was still at the party when the body was discovered. The Killer is right-handed");
+        ma.text.setText("Headmaster Seymour shows the Killer’s profile. The Killer handles guns and is right-handed. He was still at the party when the body was discovered.");
 
         ma.btn1.setText("Back");
-
+        ma.image.setImageResource(R.drawable.black);
         ma.btn2.setVisibility(View.INVISIBLE);
         ma.btn3.setVisibility(View.INVISIBLE);
         ma.btn4.setVisibility(View.INVISIBLE);
@@ -278,14 +283,15 @@ public class Story {
     }
 
     public void sec7() {
-        ma.text.setText("Albus Dumbledore shows a folder with the list of suspects \n" +
-                "\n 1. Lucious Malfoy was the organizer of the party. He is right-handed, and has a background of owning guns. \n" +
-                "\n 2. Professor Snape was seen at the Quidditch match angry about the loss of his team to Hufflepuff. He was alledgedly caught sabotaging players of Hufflepuff. Was seen at the party.\n" +
-                "\n 3. Chief Moody was the person last seen at the crime scene. Has no alibi. He is right-handed.");
+        ma.text.setText("Headmaster Seymour shows a folder with the list of suspects \n" +
+                "\n 1. Mr. Charles Keating was the organizer of the party, is Right-handed, and has a background in owning guns. \n" +
+                "\n 2. Professor Franklin Milton was seen the hockey match angry about the loss of his team to the Midnight Marauders, allegedly sabotaged their players. Was seen at the party. is Right-handed.\n" +
+                "\n 3. Chief Wallace Belmont was the person last seen at the crime scene, has no alibi before the murder, is right-handed.");
 
-        ma.btn1.setText("Lucious Malfoy");
-        ma.btn2.setText("Professor Snape");
-        ma.btn3.setText("Chief Moody");
+        ma.image.setImageResource(R.drawable.headmaster);
+        ma.btn1.setText("Mr. Keating");
+        ma.btn2.setText("Professor Milton");
+        ma.btn3.setText("Chief Wallace");
         ma.btn4.setText("Back");
 
         nextPage1 = "sus5";
@@ -295,10 +301,11 @@ public class Story {
     }
 
     public void sus5() {
-        ma.text.setText("You arrested Lucious Malfoy for the murder of Cedric Diggory. Although the evidence was pointing at him you have a gut feeling that Lucious Malfoy was just the accomplice and the real killer is still out there.");
+        ma.text.setText("You arrested Mr. Charles Keating for the death of Kennedy Bowen, although the evidence was pointing at him you have a gut feeling that he was just an accomplice and the real killer is still out there");
 
         ma.btn4.setText("Restart");
 
+        ma.image.setImageResource(R.drawable.black);
         ma.btn1.setVisibility(View.INVISIBLE);
         ma.btn2.setVisibility(View.INVISIBLE);
         ma.btn3.setVisibility(View.INVISIBLE);
@@ -307,10 +314,11 @@ public class Story {
     }
 
     public void sus6() {
-        ma.text.setText("You arrested Professor Snape for the murder of Cedric Diggory. Both you and Harry looked at each other having a gut feeling that you arrested someone innocent");
+        ma.text.setText("You arrested Professor Franklin Milton for the death of Kennedy Bowen. Both you and Henry looked at each other have a gut feeling that he might be innocent");
 
         ma.btn4.setText("Restart");
 
+        ma.image.setImageResource(R.drawable.black);
         ma.btn1.setVisibility(View.INVISIBLE);
         ma.btn2.setVisibility(View.INVISIBLE);
         ma.btn3.setVisibility(View.INVISIBLE);
@@ -319,10 +327,11 @@ public class Story {
     }
 
     public void sus7() {
-        ma.text.setText("You Arrested Chief Moody! for the murder of Cedric Diggory. Harry doesn't understand why he would do this and refuses to think Chief Moody would kill anyone but despite that, you are confident that you caught the killer!");
+        ma.text.setText("You arrested Chief Wallace Belmont for the death of Kennedy Bowen. Henry doesn’t understand why he would do this and refuses to think that the chief would kill anyone but despite that, you know that you’ve caught the killer");
 
         ma.btn4.setText("Restart");
 
+        ma.image.setImageResource(R.drawable.black);
         ma.btn1.setVisibility(View.INVISIBLE);
         ma.btn2.setVisibility(View.INVISIBLE);
         ma.btn3.setVisibility(View.INVISIBLE);
@@ -331,9 +340,10 @@ public class Story {
     }
 
     public void Result3() {
-        ma.text.setText("Professor Snape took care of the crime scene and took you and Harry to his office a week later.\n" +
+        ma.text.setText("Professor Milton took care of the crime scene and took you and Henry to his office a week later.\n" +
                 "\n What do you do?");
 
+        ma.image.setImageResource(R.drawable.scene1theafterpartyonlytape);
         ma.btn1.setText("Talk about his ties to the investigation");
         ma.btn2.setText("Ask about the evidence in the crime scene");
         ma.btn3.setText("Ask about the suspects");
@@ -351,10 +361,11 @@ public class Story {
     }
 
     public void sec8() {
-        ma.text.setText("Professor Snape: I was in the other room, drinking our loss away");
+        ma.text.setText("Professor Milton: I was in the other room, drinking our loss away");
 
         ma.btn1.setText("Back");
 
+        ma.image.setImageResource(R.drawable.professorsoffics);
         ma.btn2.setVisibility(View.INVISIBLE);
         ma.btn3.setVisibility(View.INVISIBLE);
         ma.btn4.setVisibility(View.INVISIBLE);
@@ -364,10 +375,11 @@ public class Story {
     }
 
     public void sec9() {
-        ma.text.setText("Professor Snape shows the Killer's profile. The Killer handles guns. The Killer was still at the party when the body was discovered. The Killer is right-handed");
+        ma.text.setText("Professor Milton shows the Killer’s profile. The Killer handles guns and is right-handed. He was still in the party when the body was discovered.");
 
         ma.btn1.setText("Back");
 
+        ma.image.setImageResource(R.drawable.black);
         ma.btn2.setVisibility(View.INVISIBLE);
         ma.btn3.setVisibility(View.INVISIBLE);
         ma.btn4.setVisibility(View.INVISIBLE);
@@ -377,16 +389,17 @@ public class Story {
     }
 
     public void sec10() {
-        ma.text.setText("Professor Snape shows a folder with the list of suspects \n" +
-                "\n 1. Lucious Malfoy was the organizer of the party. He is right-handed, and has a background of owning guns. \n" +
-                "\n 2. Chief Moody was the person last seen at the crime scene. Has no alibi. He is right-handed.\n" +
-                "\n 3. Albus Dumbledore is the Headmaster of the school. He was not present during the Quidditch match. Owns a guns for self protection. He is right-handed \n" +
-                "\n 4. Arrest Professor Snape");
+        ma.text.setText("Professor Milton shows a folder with the list of suspects \n" +
+                "\n 1. Mr. Charles Keating was the organizer of the party, is Right-handed, and has a background of owning guns \n" +
+                "\n 2. Chief Wallace Belmont was the person last seen at the crime scene, has no alibi before the murder, is right-handed.\n" +
+                "\n 3. Seymour Gray the headmaster of the Academy, was not present during the match. Owns a gun for protection, is Right-handed \n" +
+                "\n 4. Arrest Professor Milton");
 
-        ma.btn1.setText("Lucious Malfoy");
-        ma.btn2.setText("Professor Snape");
-        ma.btn3.setText("Chief Moody");
-        ma.btn4.setText("Professor Snape");
+        ma.image.setImageResource(R.drawable.professorsoffics);
+        ma.btn1.setText("Mr. Keating");
+        ma.btn2.setText("Chief Wallace");
+        ma.btn3.setText("Headmaster Seymour");
+        ma.btn4.setText("Professor Milton");
 
         nextPage1 = "sus8";
         nextPage2 = "sus9";
@@ -394,10 +407,11 @@ public class Story {
         nextPage4 = "sus11";
     }
     public void sus8() {
-        ma.text.setText("You arrested Lucious Malfoy for the murder of Cedric Diggory. Although the evidence was pointing at him you have a gut feeling that Lucious Malfoy was just the accomplice and the real killer is still out there.");
+        ma.text.setText("You arrested Mr. Charles Keating for the death of Kennedy Bowen, although the evidence was pointing at him you have a gut feeling that he was just an accomplice and the real killer is still out there");
 
         ma.btn4.setText("Restart");
 
+        ma.image.setImageResource(R.drawable.black);
         ma.btn1.setVisibility(View.INVISIBLE);
         ma.btn2.setVisibility(View.INVISIBLE);
         ma.btn3.setVisibility(View.INVISIBLE);
@@ -405,10 +419,11 @@ public class Story {
         nextPage4 = "startingPoint";
     }
     public void sus9() {
-        ma.text.setText("You Arrested Chief Moody for the murder of Cedric Diggory. Harry doesn't understand why he would do this and refuses to think Chief Moody would kill anyone but despite that, you are confident that you caught the killer!");
+        ma.text.setText("You arrested Chief Wallace Belmont for the death of Kennedy Bowen. Henry doesn’t understand why he would do this and refuses to think that the chief would kill anyone but despite that, you know that you caught the killer");
 
         ma.btn4.setText("Restart");
 
+        ma.image.setImageResource(R.drawable.black);
         ma.btn1.setVisibility(View.INVISIBLE);
         ma.btn2.setVisibility(View.INVISIBLE);
         ma.btn3.setVisibility(View.INVISIBLE);
@@ -416,10 +431,11 @@ public class Story {
         nextPage4 = "startingPoint";
     }
     public void sus10() {
-        ma.text.setText("You arrested Albus Dumbledore for the murder of Cedric Diggory. Both you and Harry looked at each other having a gut feeling that you arrested someone innocent");
+        ma.text.setText("You arrested Headmaster Seymour Gray for the death of Kennedy Bowen. Both you and Henry looked at each other with the gut feeling that he might be innocent");
 
         ma.btn4.setText("Restart");
 
+        ma.image.setImageResource(R.drawable.black);
         ma.btn1.setVisibility(View.INVISIBLE);
         ma.btn2.setVisibility(View.INVISIBLE);
         ma.btn3.setVisibility(View.INVISIBLE);
@@ -427,10 +443,11 @@ public class Story {
         nextPage4 = "startingPoint";
     }
     public void sus11() {
-        ma.text.setText("You arrested Professor Snape in that moment for the murder of Cedric Diggory. Both you and Harry looked at each other having a gut feeling that you arrested someone completely innocent");
+        ma.text.setText("You arrested Professor Franklin Milton for the death of Cedric Diggory. Both you and Henry looked at each other with the gut feeling that he might be innocent");
 
         ma.btn4.setText("Restart");
 
+        ma.image.setImageResource(R.drawable.professorsoffics);
         ma.btn1.setVisibility(View.INVISIBLE);
         ma.btn2.setVisibility(View.INVISIBLE);
         ma.btn3.setVisibility(View.INVISIBLE);
@@ -438,10 +455,11 @@ public class Story {
         nextPage4 = "startingPoint";
     }
     public void Result4(){
-        ma.text.setText("You left the scene and Chief Moody took over the entire investigation. A week later Albus Dumbledore was arrested for the murder of Cedric Diggory. Everyone in Hogwarts was devastated, in denial, and felt betrayed. Everyone eventually left Hogwarts for good");
+        ma.text.setText("You left the scene and Chief Wallace took over the investigation. A week later, Headmaster Seymour Gray was arrested for the murder of Kennedy Bowen. Everyone in Hooktown Academy was devastated, in denial, and eventually left the Acedemy for good");
 
         ma.btn4.setText("Restart");
 
+        ma.image.setImageResource(R.drawable.scene1theafterpartynobody);
         ma.btn1.setVisibility(View.INVISIBLE);
         ma.btn2.setVisibility(View.INVISIBLE);
         ma.btn3.setVisibility(View.INVISIBLE);

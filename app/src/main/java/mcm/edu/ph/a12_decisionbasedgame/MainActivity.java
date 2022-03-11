@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btn1, btn2, btn3, btn4;
     TextView text;
+    ImageView image;
 
     Story story = new Story(this);
 
@@ -67,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
         text = findViewById(R.id.textView);
 
+        image = (ImageView)findViewById(R.id.storyimageView);
         btn1 = (Button) findViewById(R.id.btnChoice1);
         btn2 = (Button) findViewById(R.id.btnChoice2);
         btn3 = (Button) findViewById(R.id.btnChoice3);
